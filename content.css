@@ -1,0 +1,28 @@
+.github-notification-snoozer-ignored {
+  display: none;
+}
+
+.notifications-list {
+  display: none;
+}
+
+.mail-status {
+  opacity: 0;
+}
+
+.mail-status.unread.gns-unread-ignored {
+  background: #ccc;
+}
+
+.notification-indicator:hover .mail-status.unread.gns-unread-ignored {
+  background: #ccc;
+}
+
+.notifications.gms-ignored .notifications-more>a {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.gms-hidden {
+  display: none;
+}
