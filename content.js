@@ -10,7 +10,8 @@
   function getNotifications(success, error) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET',
-             'https://api.github.com/notifications?access_token=' + accessToken);
+             'https://api.github.com/notifications?access_token=' + accessToken +
+             '&cache_buster=' + (Math.random() * 1e16));
     xhr.onload = function() {
       if (xhr.status === 200) {
         success && success(JSON.parse(xhr.responseText));
