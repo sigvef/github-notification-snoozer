@@ -61,12 +61,15 @@
         if(!showIgnoredNotificationsAnyway &&
            ignoreRegex.test(notification.repository.full_name)) {
           notification.__gns_hide = true;
-          foundNotificationsToHide = true;
         } else {
-          notification.__gns_hide = false;
-          foundNotificationsToShow = true;
+          notification.__gns_hide = notification.__gns_hide || false;
         }
       }
+	    if(!notification.__gns_hide) {
+        foundNotificationsToShow = true;
+	    } else {
+		    foundNotificationsToHide = true;
+	    }
     }
   }
 
