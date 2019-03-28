@@ -11,11 +11,11 @@
 }
 
 .mail-status.unread.gns-unread-ignored {
-  background: #ccc;
+  background: #fff;
 }
 
 .notification-indicator:hover .mail-status.unread.gns-unread-ignored {
-  background: #ccc;
+  background: #bdbfc0;
 }
 
 .notifications.gms-ignored .notifications-more>a {
